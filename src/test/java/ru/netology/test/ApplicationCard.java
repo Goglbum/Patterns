@@ -57,13 +57,13 @@ public class ApplicationCard {
         $$("[class='input__sub']").find(exactText("Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы.")).shouldHave(visible);
     }
 
-//    @Test
-//    void invalidPhone() {
-//        val applicationPage = open("http://localhost:9999", ApplicationPage.class);
-//        val authInfo = DataHelper.getAuthInfoInvalidPhone();
-//        applicationPage.invalidApplication(authInfo);
-//        $(".input_invalid [class='input__sub']").shouldHave(visible);
-//    }
+    @Test
+    void invalidPhone() {
+        val applicationPage = open("http://localhost:9999", ApplicationPage.class);
+        val authInfo = DataHelper.getAuthInfoInvalidPhone();
+        applicationPage.invalidApplication(authInfo);
+        $(".input_invalid [class='input__sub']").shouldHave(visible);
+    }
 
     @Test
     void failedCheckbox() {
