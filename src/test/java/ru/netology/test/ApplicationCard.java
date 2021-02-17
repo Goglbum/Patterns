@@ -1,6 +1,8 @@
 package ru.netology.test;
 
+import com.codeborne.selenide.Configuration;
 import lombok.val;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import ru.netology.data.DataHelper;
 import ru.netology.page.ApplicationPage;
@@ -14,6 +16,11 @@ import static com.codeborne.selenide.Selenide.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ApplicationCard {
+
+    @BeforeAll
+    static void setUpAll() {
+        Configuration.headless = true;
+    }
 
     @Test
     void passedApplicationAndReApplication() {
