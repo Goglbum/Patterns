@@ -27,7 +27,7 @@ public class ApplicationCard {
         val applicationPage = open("http://localhost:9999", ApplicationPage.class);
         val authInfo = DataHelper.getAuthInfo();
         applicationPage.validReApplication(authInfo);
-        $("[data-test-id='success-notification']").shouldHave(visible, Duration.ofSeconds(5));
+        $("[data-test-id='success-notification']").shouldHave(visible, Duration.ofSeconds(15));
     }
 
     @Test

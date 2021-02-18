@@ -29,13 +29,4 @@ public class DataHelper {
     public static AuthInfo getAuthInfoInvalidPhone() {
         return new AuthInfo(validCity(), validName(), invalidPhone());
     }
-
-//    @Value
-//    public static class VerificationCode {
-//        private String code;
-//    }
-//
-//    public static VerificationCode getVerificationCodeFor(AuthInfo authInfo) {
-//        return new VerificationCode("12345");
-//    }
 }

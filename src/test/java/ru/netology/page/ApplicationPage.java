@@ -2,7 +2,6 @@ package ru.netology.page;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
-import org.openqa.selenium.Keys;
 import ru.netology.data.DatePicker;
 import ru.netology.data.DataHelper;
 
